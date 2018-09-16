@@ -13,7 +13,7 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/fe/mapping_q1.h>
+#include "deal.II/base/config.h"
 
 #include <deal.II/hp/fe_values.h>
 

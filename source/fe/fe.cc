@@ -13,7 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/qprojector.h>
 #include <deal.II/base/quadrature.h>
 
@@ -1297,6 +1296,8 @@ FiniteElement<dim, spacedim>::base_element(const unsigned int index) const
 
 
 /*------------------------------- Explicit Instantiations -------------*/
+#include "deal.II/base/config.h"
+
 #include "fe.inst"
 
 

@@ -13,7 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/mpi.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/utilities.h>
 
 #include <deal.II/distributed/shared_tria.h>

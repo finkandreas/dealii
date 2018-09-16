@@ -13,7 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/std_cxx14/memory.h>
 #include <deal.II/base/table.h>
 #include <deal.II/base/tensor.h>
 
@@ -1072,6 +1071,8 @@ ChartManifold<dim, spacedim, chartdim>::get_periodicity() const
 }
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "manifold.inst"
 
 DEAL_II_NAMESPACE_CLOSE

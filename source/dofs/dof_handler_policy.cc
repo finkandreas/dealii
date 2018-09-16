@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/geometry_info.h>
 #include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/partitioner.h>
 #include <deal.II/base/thread_management.h>
@@ -43,6 +42,10 @@
 #  include <boost/iostreams/stream.hpp>
 #  include <boost/serialization/array.hpp>
 #endif
+
+#include "deal.II/base/config.h"
+
+#include "deal.II/base/types.h"
 
 #include <algorithm>
 #include <memory>

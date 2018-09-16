@@ -14,6 +14,8 @@
 // ---------------------------------------------------------------------
 
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/exceptions.h>
 #include <deal.II/base/tensor_product_polynomials_bubbles.h>
 

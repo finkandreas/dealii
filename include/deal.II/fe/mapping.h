@@ -27,6 +27,7 @@
 
 #include <array>
 #include <cmath>
+#include <cstddef>
 #include <memory>
 
 DEAL_II_NAMESPACE_OPEN

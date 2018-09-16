@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/qprojector.h>
 #include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/std_cxx14/memory.h>
 
@@ -307,6 +306,10 @@ FE_RT_Bubbles<dim>::convert_generalized_support_point_values_to_dof_values(
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
+#include "deal.II/base/geometry_info.h"
+
 #include "fe_rt_bubbles.inst"
 
 

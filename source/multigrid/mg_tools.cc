@@ -13,7 +13,9 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/logstream.h>
+#include "deal.II/base/config.h"
+
+#include "deal.II/base/types.h"
 #include <deal.II/base/mg_level_object.h>
 #include <deal.II/base/thread_management.h>
 

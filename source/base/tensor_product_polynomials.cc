@@ -13,6 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/exceptions.h>
 #include <deal.II/base/polynomials_piecewise.h>
 #include <deal.II/base/tensor_product_polynomials.h>
@@ -716,8 +718,5 @@ template class TensorProductPolynomials<
   3,
   Polynomials::PiecewisePolynomial<double>>;
 
-template class AnisotropicPolynomials<1>;
-template class AnisotropicPolynomials<2>;
-template class AnisotropicPolynomials<3>;
 
 DEAL_II_NAMESPACE_CLOSE

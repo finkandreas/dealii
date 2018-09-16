@@ -159,5 +159,8 @@ BoundingBox<spacedim, Number>::volume() const
   return vol;
 }
 
+#include "deal.II/base/config.h"
+
 #include "bounding_box.inst"
+
 DEAL_II_NAMESPACE_CLOSE

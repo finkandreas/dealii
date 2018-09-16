@@ -18,18 +18,13 @@
  */
 
 
-// The first few includes are just like in the previous program, so do not
-// require additional comments:
-#include <deal.II/grid/tria.h>
 #include <deal.II/grid/tria_accessor.h>
 #include <deal.II/grid/tria_iterator.h>
 #include <deal.II/grid/grid_generator.h>
 #include <deal.II/grid/manifold_lib.h>
-
 // However, the next file is new. We need this include file for the
 // association of degrees of freedom ("DoF"s) to vertices, lines, and cells:
 #include <deal.II/dofs/dof_handler.h>
-
 // The following include contains the description of the bilinear finite
 // element, including the facts that it has one degree of freedom on each
 // vertex of the triangulation, but none on faces and none in the interior of
@@ -49,11 +44,9 @@
 // We will also need to use an intermediate sparsity pattern structure, which
 // is found in this file:
 #include <deal.II/lac/dynamic_sparsity_pattern.h>
-
 // We will want to use a special algorithm to renumber degrees of freedom. It
 // is declared here:
 #include <deal.II/dofs/dof_renumbering.h>
-
 // And this is again needed for C++ output:
 #include <fstream>
 

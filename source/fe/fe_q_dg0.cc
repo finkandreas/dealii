@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/qprojector.h>
 #include <deal.II/base/quadrature.h>
 #include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/std_cxx14/memory.h>
@@ -292,6 +291,8 @@ FE_Q_DG0<dim, spacedim>::get_constant_modes() const
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "fe_q_dg0.inst"
 
 DEAL_II_NAMESPACE_CLOSE

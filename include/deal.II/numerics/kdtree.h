@@ -94,6 +94,7 @@ public:
    * to the vector of points, and generates some helper functions for nanoflann.
    */
   struct PointCloudAdaptor
+
   {
     /**
      * An alias used by nanoflann.

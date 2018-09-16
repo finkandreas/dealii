@@ -14,8 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/template_constraints.h>
-
 #include <deal.II/grid/grid_refinement.h>
 #include <deal.II/grid/tria.h>
 #include <deal.II/grid/tria_accessor.h>
@@ -434,6 +432,8 @@ GridRefinement::refine_and_coarsen_optimize(Triangulation<dim, spacedim> &tria,
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "grid_refinement.inst"
 
 DEAL_II_NAMESPACE_CLOSE

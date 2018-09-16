@@ -18,6 +18,8 @@
 
 DEAL_II_NAMESPACE_OPEN
 
+#include "deal.II/base/config.h"
+
 #include "la_parallel_vector.inst"
 
 // do a few functions that currently don't fit the scheme because they have

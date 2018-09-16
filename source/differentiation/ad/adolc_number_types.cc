@@ -14,8 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/config.h>
-
 #ifdef DEAL_II_WITH_ADOLC
 
 #  include <deal.II/differentiation/ad/ad_number_traits.h>

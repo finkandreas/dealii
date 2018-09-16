@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/geometry_info.h>
 #include <deal.II/base/polynomials_rannacher_turek.h>
 
 DEAL_II_NAMESPACE_OPEN
@@ -188,6 +187,8 @@ PolynomialsRannacherTurek<dim>::compute(
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "polynomials_rannacher_turek.inst"
 
 DEAL_II_NAMESPACE_CLOSE

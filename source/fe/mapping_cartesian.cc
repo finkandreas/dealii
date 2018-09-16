@@ -13,7 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/array_view.h>
 #include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/qprojector.h>
 #include <deal.II/base/quadrature.h>
@@ -1141,6 +1140,8 @@ MappingCartesian<dim, spacedim>::clone() const
 
 //---------------------------------------------------------------------------
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "mapping_cartesian.inst"
 
 

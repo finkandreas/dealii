@@ -44,7 +44,7 @@
 // Author: Wolfgang Bangerth, 2007
 
 
-#include <algorithm>
+#include <stdlib.h>
 #include <iostream>
 #include <fstream>
 #include <map>

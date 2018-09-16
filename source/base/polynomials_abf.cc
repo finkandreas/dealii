@@ -14,6 +14,8 @@
 // ---------------------------------------------------------------------
 
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/polynomials_abf.h>
 #include <deal.II/base/quadrature_lib.h>
 

@@ -13,7 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/grid/grid_tools.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/grid/grid_tools_cache.h>
 
 DEAL_II_NAMESPACE_OPEN

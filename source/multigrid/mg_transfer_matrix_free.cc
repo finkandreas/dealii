@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/function.h>
 #include <deal.II/base/logstream.h>
 #include <deal.II/base/vectorization.h>
 
@@ -745,6 +744,8 @@ MGTransferBlockMatrixFree<dim, Number>::memory_consumption() const
 
 
 // explicit instantiation
+#include "deal.II/base/config.h"
+
 #include "mg_transfer_matrix_free.inst"
 
 

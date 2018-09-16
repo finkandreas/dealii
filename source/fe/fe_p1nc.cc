@@ -14,7 +14,7 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/std_cxx14/memory.h>
+#include "deal.II/base/config.h"
 
 #include <deal.II/fe/fe_p1nc.h>
 

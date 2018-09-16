@@ -13,10 +13,13 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/exceptions.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/memory_consumption.h>
 
 #include <deal.II/dofs/dof_faces.h>
+
+#include <cstddef>
 
 DEAL_II_NAMESPACE_OPEN
 

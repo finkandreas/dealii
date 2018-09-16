@@ -13,7 +13,11 @@
 //
 //-----------------------------------------------------------
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/sundials/copy.h>
+
+#include <cstddef>
 
 #ifdef DEAL_II_WITH_SUNDIALS
 

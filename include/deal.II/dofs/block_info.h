@@ -16,11 +16,15 @@
 #ifndef dealii_block_info_h
 #define dealii_block_info_h
 
+#include "deal.II/base/config.h"
+
+#include "deal.II/base/types.h"
 #include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/subscriptor.h>
 
 #include <deal.II/lac/block_indices.h>
 
+#include <cstddef>
 #include <iomanip>
 
 DEAL_II_NAMESPACE_OPEN
@@ -29,6 +33,7 @@ DEAL_II_NAMESPACE_OPEN
 
 template <int dim, int spacedim>
 class DoFHandler;
+
 namespace hp
 {
   template <int dim, int spacedim>

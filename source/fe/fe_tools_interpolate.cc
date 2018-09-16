@@ -14,11 +14,11 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/fe/fe_tools_interpolate.templates.h>
-
 DEAL_II_NAMESPACE_OPEN
 
 /*-------------- Explicit Instantiations -------------------------------*/
+#include "deal.II/base/config.h"
+
 #include "fe_tools_interpolate.inst"
 
 DEAL_II_NAMESPACE_CLOSE

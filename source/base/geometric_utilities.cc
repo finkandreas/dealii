@@ -14,8 +14,12 @@
 // ---------------------------------------------------------------------
 
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/exceptions.h>
 #include <deal.II/base/geometric_utilities.h>
+
+#include <cstddef>
 
 
 DEAL_II_NAMESPACE_OPEN

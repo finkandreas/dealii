@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/std_cxx14/memory.h>
 
 #include <deal.II/fe/fe_rannacher_turek.h>
@@ -137,6 +136,8 @@ FE_RannacherTurek<dim>::convert_generalized_support_point_values_to_dof_values(
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "fe_rannacher_turek.inst"
 
 DEAL_II_NAMESPACE_CLOSE

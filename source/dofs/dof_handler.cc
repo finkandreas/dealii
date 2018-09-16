@@ -13,7 +13,9 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/geometry_info.h>
+#include "deal.II/base/config.h"
+
+#include "deal.II/base/types.h"
 #include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/std_cxx14/memory.h>
 

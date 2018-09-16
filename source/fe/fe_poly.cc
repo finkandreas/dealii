@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/polynomials_p.h>
 #include <deal.II/base/polynomials_piecewise.h>
 #include <deal.II/base/polynomials_rannacher_turek.h>
 #include <deal.II/base/qprojector.h>
@@ -300,6 +299,8 @@ FE_Poly<PolynomialSpace<2>, 2, 3>::fill_fe_values(
     }
 }
 
+
+#include "deal.II/base/config.h"
 
 #include "fe_poly.inst"
 

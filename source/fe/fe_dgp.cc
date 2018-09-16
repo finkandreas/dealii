@@ -14,8 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/std_cxx14/memory.h>
-
 #include <deal.II/fe/fe_dgp.h>
 #include <deal.II/fe/fe_tools.h>
 
@@ -261,6 +259,8 @@ FE_DGP<dim, spacedim>::memory_consumption() const
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "fe_dgp.inst"
 
 

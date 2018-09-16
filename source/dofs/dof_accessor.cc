@@ -181,6 +181,8 @@ DoFCellAccessor<DoFHandlerType, lda>::neighbor_or_periodic_neighbor(
 
 // --------------------------------------------------------------------------
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "dof_accessor.inst"
 
 DEAL_II_NAMESPACE_CLOSE

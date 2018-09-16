@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/qprojector.h>
 #include <deal.II/base/quadrature.h>
 #include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/std_cxx14/memory.h>
@@ -535,6 +534,8 @@ FE_RaviartThomas<dim>::memory_consumption() const
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "fe_raviart_thomas.inst"
 
 

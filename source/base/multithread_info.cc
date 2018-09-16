@@ -25,6 +25,8 @@
 #  include <sys/types.h>
 #endif
 
+#include "deal.II/base/config.h"
+
 #include <algorithm>
 
 #ifdef DEAL_II_WITH_THREADS

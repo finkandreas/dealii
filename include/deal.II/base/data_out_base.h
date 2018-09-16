@@ -26,6 +26,7 @@
 
 #include <deal.II/numerics/data_component_interpretation.h>
 
+#include <cstddef>
 #include <limits>
 #include <string>
 #include <tuple>
@@ -39,6 +40,8 @@
 
 #  include "TECIO.h"
 #endif
+
+#include "deal.II/base/types.h"
 
 #include <ostream>
 

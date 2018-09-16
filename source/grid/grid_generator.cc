@@ -13,7 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/distributed/shared_tria.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/distributed/tria.h>
 
 #include <deal.II/grid/grid_generator.h>

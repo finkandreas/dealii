@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/array_view.h>
 #include <deal.II/base/derivative_form.h>
 #include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/qprojector.h>
@@ -40,6 +39,7 @@
 #include <algorithm>
 #include <array>
 #include <cmath>
+#include <cstddef>
 #include <memory>
 #include <numeric>
 
@@ -1450,6 +1450,8 @@ MappingManifold<dim, spacedim>::transform(
 }
 
 //--------------------------- Explicit instantiations -----------------------
+#include "deal.II/base/config.h"
+
 #include "mapping_manifold.inst"
 
 

@@ -13,7 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/geometry_info.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/point.h>
 #include <deal.II/base/tensor.h>
 

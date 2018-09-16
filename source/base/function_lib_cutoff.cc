@@ -13,6 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/function_lib.h>
 #include <deal.II/base/point.h>
 #include <deal.II/base/tensor.h>

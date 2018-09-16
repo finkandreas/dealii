@@ -149,6 +149,7 @@ namespace Polynomials
      * A variable storing the index of the current polynomial in the range of
      * intervals.
      */
+
     unsigned int interval;
 
     /**

@@ -13,7 +13,7 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/lac/sparse_vanka.templates.h>
+#include "deal.II/base/config.h"
 
 DEAL_II_NAMESPACE_OPEN
 
@@ -29,9 +29,6 @@ template void
 SparseVanka<double>::vmult<double>(Vector<double> &      dst,
                                    const Vector<double> &src) const;
 
-
-template class SparseBlockVanka<float>;
-template class SparseBlockVanka<double>;
 
 template void
 SparseBlockVanka<double>::vmult<float>(Vector<float> &      dst,

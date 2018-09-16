@@ -13,7 +13,7 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/numbers.h>
+#include "deal.II/base/config.h"
 
 #include <deal.II/lac/block_vector.h>
 #include <deal.II/lac/full_matrix.h>

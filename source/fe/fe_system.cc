@@ -13,7 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/memory_consumption.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/qprojector.h>
 #include <deal.II/base/quadrature.h>
 #include <deal.II/base/std_cxx14/memory.h>

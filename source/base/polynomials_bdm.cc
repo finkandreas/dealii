@@ -14,7 +14,8 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/geometry_info.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/polynomial_space.h>
 #include <deal.II/base/polynomials_bdm.h>
 #include <deal.II/base/quadrature_lib.h>

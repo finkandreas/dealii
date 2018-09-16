@@ -13,14 +13,12 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/lac/precondition_block.templates.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/lac/sparse_matrix_ez.h>
 
 DEAL_II_NAMESPACE_OPEN
 
-
-// explicit instantiations for "float" PreconditionBlock
-template class PreconditionBlock<SparseMatrixEZ<float>, float>;
 
 // the instantiation for class PreconditionBlock<SparseMatrixEZ<float>, double>
 // is skipped because it does not make sense to have inverse block matrices with
@@ -35,9 +33,6 @@ template class PreconditionBlock<SparseMatrixEZ<double>, double>;
 
 /*--------------------- PreconditionBlockJacobi -----------------------*/
 
-
-// explicit instantiations for "float" PreconditionBlock
-template class PreconditionBlockJacobi<SparseMatrixEZ<float>, float>;
 
 template void
 PreconditionBlockJacobi<SparseMatrixEZ<float>, float>::vmult<float>(
@@ -145,9 +140,6 @@ PreconditionBlockJacobi<SparseMatrixEZ<double>, double>::Tvmult_add<double>(
 /*--------------------- PreconditionBlockGaussSeidel -----------------------*/
 
 
-// explicit instantiations for "float" PreconditionBlock
-template class PreconditionBlockSOR<SparseMatrixEZ<float>, float>;
-
 template void
 PreconditionBlockSOR<SparseMatrixEZ<float>, float>::vmult<float>(
   Vector<float> &,
@@ -246,9 +238,6 @@ PreconditionBlockSOR<SparseMatrixEZ<double>, double>::Tvmult_add<double>(
 
 /*--------------------- PreconditionBlockSSOR -----------------------*/
 
-
-// explicit instantiations for "float" PreconditionBlock
-template class PreconditionBlockSSOR<SparseMatrixEZ<float>, float>;
 
 template void
 PreconditionBlockSSOR<SparseMatrixEZ<float>, float>::vmult<float>(

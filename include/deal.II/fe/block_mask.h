@@ -18,9 +18,11 @@
 
 #include <deal.II/base/config.h>
 
+#include "deal.II/base/types.h"
 #include <deal.II/base/exceptions.h>
 #include <deal.II/base/memory_consumption.h>
 
+#include <cstddef>
 #include <iosfwd>
 #include <vector>
 

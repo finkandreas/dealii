@@ -13,7 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/smartpointer.h>
 
 #include <deal.II/distributed/shared_tria.h>
@@ -210,6 +209,8 @@ InterGridMap<MeshType>::memory_consumption() const
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "intergrid_map.inst"
 
 DEAL_II_NAMESPACE_CLOSE

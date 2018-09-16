@@ -13,9 +13,11 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/lac/precondition_block.templates.h>
 #include <deal.II/lac/sparse_matrix.h>
 
 DEAL_II_NAMESPACE_OPEN
+#include "deal.II/base/config.h"
+
 #include "precondition_block.inst"
+
 DEAL_II_NAMESPACE_CLOSE

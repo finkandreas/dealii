@@ -18,6 +18,7 @@
 
 #include <deal.II/base/config.h>
 
+#include "deal.II/base/types.h"
 #include <deal.II/base/exceptions.h>
 #include <deal.II/base/index_set.h>
 #include <deal.II/base/subscriptor.h>
@@ -29,6 +30,7 @@
 
 #include <boost/range/iterator_range.hpp>
 
+#include <cstddef>
 #include <set>
 #include <utility>
 #include <vector>

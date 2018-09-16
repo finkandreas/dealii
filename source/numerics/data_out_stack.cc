@@ -13,7 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/quadrature_lib.h>
 
 #include <deal.II/dofs/dof_accessor.h>
@@ -32,6 +31,7 @@
 
 #include <deal.II/numerics/data_out_stack.h>
 
+#include <cstddef>
 #include <sstream>
 
 DEAL_II_NAMESPACE_OPEN
@@ -504,6 +504,8 @@ DataOutStack<dim, spacedim, DoFHandlerType>::get_dataset_names() const
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "data_out_stack.inst"
 
 

@@ -13,7 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/array_view.h>
 #include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/polynomial.h>
 #include <deal.II/base/quadrature.h>
@@ -536,6 +535,8 @@ MappingQ<dim, spacedim>::clone() const
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "mapping_q.inst"
 
 

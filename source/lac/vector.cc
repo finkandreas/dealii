@@ -13,9 +13,9 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/lac/vector.templates.h>
-
 DEAL_II_NAMESPACE_OPEN
+
+#include "deal.II/base/config.h"
 
 #include "vector.inst"
 

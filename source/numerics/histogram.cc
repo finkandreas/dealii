@@ -13,7 +13,7 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/memory_consumption.h>
+#include "deal.II/base/config.h"
 
 #include <deal.II/lac/vector.h>
 

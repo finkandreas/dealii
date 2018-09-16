@@ -14,6 +14,8 @@
 // ---------------------------------------------------------------------
 
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/fe/block_mask.h>
 
 #include <iostream>

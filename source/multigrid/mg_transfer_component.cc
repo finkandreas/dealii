@@ -14,7 +14,8 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/function.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/logstream.h>
 
 #include <deal.II/dofs/dof_accessor.h>

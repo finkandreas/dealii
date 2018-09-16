@@ -18,9 +18,6 @@
  */
 
 
-// The first few files have already been covered in previous examples and will
-// thus not be further commented on:
-#include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/function.h>
 #include <deal.II/lac/vector.h>
 #include <deal.II/lac/dynamic_sparsity_pattern.h>
@@ -52,7 +49,6 @@
 #include <deal.II/lac/precondition_block.h>
 // We are going to use gradients as refinement indicator.
 #include <deal.II/numerics/derivative_approximation.h>
-
 // Here come the new include files for using the MeshWorker framework. The first
 // contains the class MeshWorker::DoFInfo, which provides local integrators with
 // a mapping between local and global degrees of freedom. It stores the results
@@ -67,7 +63,6 @@
 #include <deal.II/meshworker/integration_info.h>
 #include <deal.II/meshworker/simple.h>
 #include <deal.II/meshworker/loop.h>
-
 // Like in all programs, we finish this section by including the needed C++
 // headers and declaring we want to use objects in the dealii namespace without
 // prefix.

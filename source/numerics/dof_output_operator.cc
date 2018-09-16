@@ -14,7 +14,8 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/logstream.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/parameter_handler.h>
 
 #include <deal.II/lac/block_vector.h>

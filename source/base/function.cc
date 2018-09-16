@@ -13,11 +13,11 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/function.templates.h>
-
 DEAL_II_NAMESPACE_OPEN
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "function.inst"
 
 DEAL_II_NAMESPACE_CLOSE

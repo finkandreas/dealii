@@ -109,6 +109,7 @@ PolynomialsP<dim>::directional_degrees(unsigned int n) const
   return this->compute_index(n);
 }
 
+
 DEAL_II_NAMESPACE_CLOSE
 
 #endif

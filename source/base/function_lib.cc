@@ -13,7 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/function_bessel.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/function_lib.h>
 #include <deal.II/base/numbers.h>
 #include <deal.II/base/point.h>
@@ -23,6 +24,15 @@
 #include <deal.II/lac/vector.h>
 
 #include <cmath>
+
+namespace dealii
+{
+  namespace Functions
+  {
+    template <int dim>
+    class Bessel1;
+  } // namespace Functions
+} // namespace dealii
 
 DEAL_II_NAMESPACE_OPEN
 
@@ -2787,53 +2797,9 @@ namespace Functions
   template class SquareFunction<1>;
   template class SquareFunction<2>;
   template class SquareFunction<3>;
-  template class Q1WedgeFunction<1>;
-  template class Q1WedgeFunction<2>;
-  template class Q1WedgeFunction<3>;
-  template class PillowFunction<1>;
-  template class PillowFunction<2>;
-  template class PillowFunction<3>;
-  template class CosineFunction<1>;
-  template class CosineFunction<2>;
-  template class CosineFunction<3>;
-  template class CosineGradFunction<1>;
-  template class CosineGradFunction<2>;
-  template class CosineGradFunction<3>;
-  template class ExpFunction<1>;
-  template class ExpFunction<2>;
-  template class ExpFunction<3>;
-  template class JumpFunction<1>;
-  template class JumpFunction<2>;
-  template class JumpFunction<3>;
-  template class FourierCosineFunction<1>;
-  template class FourierCosineFunction<2>;
-  template class FourierCosineFunction<3>;
-  template class FourierSineFunction<1>;
-  template class FourierSineFunction<2>;
-  template class FourierSineFunction<3>;
-  template class FourierCosineSum<1>;
-  template class FourierCosineSum<2>;
-  template class FourierCosineSum<3>;
-  template class FourierSineSum<1>;
-  template class FourierSineSum<2>;
-  template class FourierSineSum<3>;
-  template class SlitSingularityFunction<2>;
-  template class SlitSingularityFunction<3>;
-  template class Monomial<1>;
-  template class Monomial<2>;
-  template class Monomial<3>;
   template class Bessel1<1>;
   template class Bessel1<2>;
   template class Bessel1<3>;
-  template class InterpolatedTensorProductGridData<1>;
-  template class InterpolatedTensorProductGridData<2>;
-  template class InterpolatedTensorProductGridData<3>;
-  template class InterpolatedUniformGridData<1>;
-  template class InterpolatedUniformGridData<2>;
-  template class InterpolatedUniformGridData<3>;
-  template class Polynomial<1>;
-  template class Polynomial<2>;
-  template class Polynomial<3>;
 } // namespace Functions
 
 DEAL_II_NAMESPACE_CLOSE

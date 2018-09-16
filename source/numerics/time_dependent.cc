@@ -13,7 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/parallel.h>
 #include <deal.II/base/thread_management.h>
 #include <deal.II/base/utilities.h>
@@ -1269,6 +1268,8 @@ TimeStepBase_Tria_Flags::RefinementData<dim>::RefinementData(
 
 
 /*-------------- Explicit Instantiations -------------------------------*/
+#include "deal.II/base/config.h"
+
 #include "time_dependent.inst"
 
 

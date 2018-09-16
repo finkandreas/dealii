@@ -23,34 +23,34 @@
 // deal.II library files and some C++ header files.
 #include <deal.II/base/function.h>
 #include <deal.II/base/quadrature_lib.h>
-
 #include <deal.II/grid/grid_generator.h>
 #include <deal.II/grid/tria_accessor.h>
 #include <deal.II/grid/tria_iterator.h>
 #include <deal.II/grid/tria.h>
 #include <deal.II/grid/grid_out.h>
-
 #include <deal.II/dofs/dof_handler.h>
 #include <deal.II/dofs/dof_accessor.h>
 #include <deal.II/dofs/dof_tools.h>
-
 #include <deal.II/fe/fe_q.h>
 #include <deal.II/fe/fe_values.h>
-
 #include <deal.II/lac/affine_constraints.h>
 #include <deal.II/lac/sparse_direct.h>
-
 #include <deal.II/numerics/vector_tools.h>
 #include <deal.II/numerics/data_out.h>
-
+// This is the only include file that is new: It includes all the Runge-Kutta
+// methods.
+#include <deal.II/base/time_stepping.h>
+#include <deal.II/base/config.h>
 #include <fstream>
 #include <iostream>
 #include <cmath>
 #include <map>
 
-// This is the only include file that is new: It includes all the Runge-Kutta
-// methods.
-#include <deal.II/base/time_stepping.h>
+namespace dealii
+{
+  template <typename number>
+  class Vector;
+} // namespace dealii
 
 
 // The next step is like in all previous tutorial programs: We put everything

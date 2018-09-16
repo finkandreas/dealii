@@ -14,7 +14,8 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/polynomials_p.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/qprojector.h>
 #include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/std_cxx14/memory.h>

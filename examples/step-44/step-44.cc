@@ -33,23 +33,19 @@
 #include <deal.II/base/work_stream.h>
 #include <deal.II/dofs/dof_renumbering.h>
 #include <deal.II/dofs/dof_tools.h>
-
 // This header gives us the functionality to store
 // data at quadrature points
 #include <deal.II/base/quadrature_point_data.h>
-
 #include <deal.II/grid/grid_generator.h>
 #include <deal.II/grid/grid_tools.h>
 #include <deal.II/grid/grid_in.h>
 #include <deal.II/grid/tria.h>
-
 #include <deal.II/fe/fe_dgp_monomial.h>
 #include <deal.II/fe/fe_q.h>
 #include <deal.II/fe/fe_system.h>
 #include <deal.II/fe/fe_tools.h>
 #include <deal.II/fe/fe_values.h>
 #include <deal.II/fe/mapping_q_eulerian.h>
-
 #include <deal.II/lac/block_sparse_matrix.h>
 #include <deal.II/lac/block_vector.h>
 #include <deal.II/lac/dynamic_sparsity_pattern.h>
@@ -59,7 +55,6 @@
 #include <deal.II/lac/solver_selector.h>
 #include <deal.II/lac/sparse_direct.h>
 #include <deal.II/lac/affine_constraints.h>
-
 // Here are the headers necessary to use the LinearOperator class.
 // These are also all conveniently packaged into a single
 // header file, namely <deal.II/lac/linear_operator_tools.h>
@@ -67,18 +62,17 @@
 // of transparency.
 #include <deal.II/lac/linear_operator.h>
 #include <deal.II/lac/packaged_operation.h>
-
 #include <deal.II/numerics/data_out.h>
 #include <deal.II/numerics/vector_tools.h>
-
 // Defined in these two headers are some operations that are pertinent to
 // finite strain elasticity. The first will help us compute some kinematic
 // quantities, and the second provides some stanard tensor definitions.
 #include <deal.II/physics/elasticity/kinematics.h>
 #include <deal.II/physics/elasticity/standard_tensors.h>
-
 #include <iostream>
 #include <fstream>
+
+#include "deal.II/base/types.h"
 
 
 // We then stick everything that relates to this tutorial program into a
@@ -832,13 +826,10 @@ namespace Step44
     // quadrature points:
     struct PerTaskData_K;
     struct ScratchData_K;
-
     struct PerTaskData_RHS;
     struct ScratchData_RHS;
-
     struct PerTaskData_SC;
     struct ScratchData_SC;
-
     struct PerTaskData_UQPH;
     struct ScratchData_UQPH;
 

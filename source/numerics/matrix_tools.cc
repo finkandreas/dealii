@@ -13,7 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/function.h>
 #include <deal.II/base/geometry_info.h>
 #include <deal.II/base/quadrature.h>
 #include <deal.II/base/work_stream.h>
@@ -52,9 +51,19 @@
 #  include <deal.II/lac/trilinos_vector.h>
 #endif
 
+#include "deal.II/base/config.h"
+
+#include "deal.II/base/types.h"
+
 #include <algorithm>
 #include <cmath>
 #include <set>
+
+namespace dealii
+{
+  template <typename number>
+  class Vector;
+} // namespace dealii
 
 
 DEAL_II_NAMESPACE_OPEN

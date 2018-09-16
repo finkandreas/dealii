@@ -14,7 +14,8 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/lac/block_vector.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/lac/la_parallel_block_vector.h>
 #include <deal.II/lac/la_parallel_vector.h>
 #include <deal.II/lac/la_vector.h>

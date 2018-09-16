@@ -13,7 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/geometry_info.h>
 #include <deal.II/base/quadrature.h>
 #include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/thread_management.h>
@@ -560,6 +559,8 @@ KellyErrorEstimator<1, spacedim>::estimate(
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "error_estimator_1d.inst"
 
 

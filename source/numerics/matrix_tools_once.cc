@@ -13,7 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/function.h>
 #include <deal.II/base/geometry_info.h>
 #include <deal.II/base/quadrature.h>
 #include <deal.II/base/work_stream.h>
@@ -52,6 +51,8 @@
 #  include <deal.II/lac/trilinos_sparse_matrix.h>
 #  include <deal.II/lac/trilinos_vector.h>
 #endif
+
+#include "deal.II/base/config.h"
 
 #include <algorithm>
 #include <cmath>

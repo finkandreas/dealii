@@ -168,6 +168,10 @@ CellId::to_cell(const Triangulation<dim, spacedim> &tria) const
 }
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
+#include "deal.II/base/types.h"
+
 #include "cell_id.inst"
 
 DEAL_II_NAMESPACE_CLOSE

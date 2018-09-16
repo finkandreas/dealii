@@ -13,6 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
+#include "deal.II/base/auto_derivative_function.h"
+#include "deal.II/base/exceptions.h"
 #include <deal.II/base/parsed_function.h>
 #include <deal.II/base/utilities.h>
 

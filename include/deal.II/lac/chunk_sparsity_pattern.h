@@ -19,12 +19,14 @@
 
 #include <deal.II/base/config.h>
 
+#include "deal.II/base/types.h"
 #include <deal.II/base/exceptions.h>
 #include <deal.II/base/subscriptor.h>
 #include <deal.II/base/vector_slice.h>
 
 #include <deal.II/lac/sparsity_pattern.h>
 
+#include <cstddef>
 #include <iostream>
 #include <vector>
 

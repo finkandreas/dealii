@@ -14,6 +14,8 @@
 // ---------------------------------------------------------------------
 
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/opencascade/manifold_lib.h>
 
 #ifdef DEAL_II_WITH_OPENCASCADE

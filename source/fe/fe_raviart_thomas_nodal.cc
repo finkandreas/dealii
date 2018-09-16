@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/qprojector.h>
 #include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/std_cxx14/memory.h>
 
@@ -772,6 +771,10 @@ FE_RaviartThomasNodal<dim>::get_subface_interpolation_matrix(
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
+#include "deal.II/base/geometry_info.h"
+
 #include "fe_raviart_thomas_nodal.inst"
 
 

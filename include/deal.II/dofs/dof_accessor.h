@@ -19,6 +19,8 @@
 
 #include <deal.II/base/config.h>
 
+#include "deal.II/base/types.h"
+
 #include <deal.II/dofs/dof_handler.h>
 
 #include <deal.II/grid/tria_accessor.h>
@@ -35,10 +37,8 @@ template <typename number>
 class Vector;
 template <typename number>
 class AffineConstraints;
-
 template <typename Accessor>
 class TriaRawIterator;
-
 template <int, int>
 class FiniteElement;
 
@@ -53,6 +53,7 @@ namespace internal
   namespace DoFHandlerImplementation
   {
     struct Implementation;
+
     namespace Policy
     {
       struct Implementation;

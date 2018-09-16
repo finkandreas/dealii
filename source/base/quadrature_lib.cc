@@ -13,7 +13,9 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/geometry_info.h>
+#include "deal.II/base/config.h"
+#include <deal.II/base/config.h>
+
 #include <deal.II/base/polynomial.h>
 #include <deal.II/base/quadrature_lib.h>
 
@@ -1353,47 +1355,12 @@ QSplit<dim>::QSplit(const QSimplex<dim> &base, const Point<dim> &split_point)
 // explicit specialization
 // note that 1d formulae are specialized by implementation above
 template class QGauss<2>;
-template class QGaussLobatto<2>;
-template class QMidpoint<2>;
-template class QTrapez<2>;
-template class QSimpson<2>;
-template class QMilne<2>;
-template class QWeddle<2>;
 
-template class QGauss<3>;
-template class QGaussLobatto<3>;
-template class QMidpoint<3>;
-template class QTrapez<3>;
-template class QSimpson<3>;
-template class QMilne<3>;
-template class QWeddle<3>;
 
 template class QSorted<1>;
 template class QSorted<2>;
 template class QSorted<3>;
 
-template class QTelles<1>;
-template class QTelles<2>;
-template class QTelles<3>;
 
-template class QGaussChebyshev<1>;
-template class QGaussChebyshev<2>;
-template class QGaussChebyshev<3>;
-
-template class QGaussRadauChebyshev<1>;
-template class QGaussRadauChebyshev<2>;
-template class QGaussRadauChebyshev<3>;
-
-template class QGaussLobattoChebyshev<1>;
-template class QGaussLobattoChebyshev<2>;
-template class QGaussLobattoChebyshev<3>;
-
-template class QSimplex<1>;
-template class QSimplex<2>;
-template class QSimplex<3>;
-
-template class QSplit<1>;
-template class QSplit<2>;
-template class QSplit<3>;
 
 DEAL_II_NAMESPACE_CLOSE

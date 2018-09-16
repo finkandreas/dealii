@@ -19,21 +19,10 @@
  *          D. Sarah Stamps, MIT, 2014
  */
 
-// Let us start with the include files we need here. Obviously, we need the
-// ones that describe the triangulation (<code>tria.h</code>), and that allow
-// us to create and output triangulations (<code>grid_generator.h</code> and
-// <code>grid_out.h</code>). Furthermore, we need the header file that
-// declares the Manifold and ChartManifold classes that we will need to
-// describe the geometry (<code>manifold.h</code>). We will then also need
-// the GridTools::transform() function from the last of the following header
-// files; the purpose for this function will become discussed at the point
-// where we use it.
-#include <deal.II/grid/tria.h>
 #include <deal.II/grid/grid_generator.h>
 #include <deal.II/grid/grid_out.h>
 #include <deal.II/grid/manifold.h>
 #include <deal.II/grid/grid_tools.h>
-
 // The remainder of the include files relate to reading the topography data.
 // As explained in the introduction, we will read it from a file and then use
 // the Functions::InterpolatedUniformGridData class that is declared in the
@@ -41,17 +30,14 @@
 // read from is stored as gzip compressed data and we make use of some
 // BOOST-provided functionality to read directly from gzipped data.
 #include <deal.II/base/function_lib.h>
-
 #include <boost/iostreams/filtering_stream.hpp>
 #include <boost/iostreams/filter/gzip.hpp>
 #include <boost/iostreams/device/file.hpp>
-
 // The last include file is required because we will be using a feature that is
 // not part of the C++11 standard. As some of the C++14 features are very
 // useful, we provide their implementation in an internal namespace, if the
 // compiler does not support them:
 #include <deal.II/base/std_cxx14/memory.h>
-
 #include <iostream>
 #include <fstream>
 

@@ -13,6 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/numerics/kdtree.h>
 
 #ifdef DEAL_II_WITH_NANOFLANN

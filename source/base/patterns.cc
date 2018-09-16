@@ -14,7 +14,8 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/logstream.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/path_search.h>
 #include <deal.II/base/patterns.h>

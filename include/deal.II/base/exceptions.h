@@ -18,6 +18,7 @@
 
 #include <deal.II/base/config.h>
 
+#include <cstddef>
 #include <exception>
 #include <ostream>
 #include <string>
@@ -1388,6 +1389,7 @@ namespace internal
   // https://stackoverflow.com/questions/13842468/comma-in-c-c-macro
   template <typename T>
   struct argument_type;
+
   template <typename T, typename U>
   struct argument_type<T(U)>
   {

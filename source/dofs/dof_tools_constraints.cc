@@ -13,7 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/table.h>
 #include <deal.II/base/template_constraints.h>
 #include <deal.II/base/thread_management.h>
 #include <deal.II/base/utilities.h>
@@ -42,6 +41,9 @@
 #  include <deal.II/lac/la_parallel_vector.h>
 #endif
 
+#include "deal.II/base/config.h"
+
+#include "deal.II/base/types.h"
 #include <deal.II/base/std_cxx14/memory.h>
 
 #include <algorithm>
@@ -438,8 +440,6 @@ namespace DoFTools
       };
 
 
-      template <int dim, int spacedim>
-      struct DoFHandlerSupportsDifferentFEs<dealii::DoFHandler<dim, spacedim>>
       {
         static const bool value = false;
       };

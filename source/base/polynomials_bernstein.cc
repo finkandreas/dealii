@@ -13,6 +13,7 @@
 //
 // ---------------------------------------------------------------------
 
+#include "deal.II/base/polynomial.h"
 #include <deal.II/base/polynomials_bernstein.h>
 
 #include <boost/math/special_functions/binomial.hpp>

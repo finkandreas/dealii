@@ -18,6 +18,7 @@
 
 #include <deal.II/base/config.h>
 
+#include "deal.II/base/types.h"
 #include <deal.II/base/exceptions.h>
 #include <deal.II/base/thread_management.h>
 #include <deal.II/base/utilities.h>
@@ -25,6 +26,7 @@
 #include <boost/serialization/vector.hpp>
 
 #include <algorithm>
+#include <cstddef>
 #include <iterator>
 #include <vector>
 

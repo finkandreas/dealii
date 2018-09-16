@@ -20,9 +20,6 @@
 
 // @sect3{Include files}
 
-// The first few (many?) include files have already been used in the previous
-// example, so we will not explain their meaning here again.
-#include <deal.II/grid/tria.h>
 #include <deal.II/dofs/dof_handler.h>
 #include <deal.II/grid/grid_generator.h>
 #include <deal.II/grid/tria_accessor.h>
@@ -41,16 +38,14 @@
 #include <deal.II/lac/dynamic_sparsity_pattern.h>
 #include <deal.II/lac/solver_cg.h>
 #include <deal.II/lac/precondition.h>
-
 #include <deal.II/numerics/data_out.h>
-#include <fstream>
-#include <iostream>
-
 // This is new, however: in the previous example we got some unwanted output
 // from the linear solvers. If we want to suppress it, we have to include this
 // file and add a single line somewhere to the program (see the main()
 // function below for that):
 #include <deal.II/base/logstream.h>
+#include <fstream>
+#include <iostream>
 
 // The final step, as in previous programs, is to import all the deal.II class
 // and function names into the global namespace:

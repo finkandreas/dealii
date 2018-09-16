@@ -14,8 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/numerics/vector_tools.templates.h>
-
 DEAL_II_NAMESPACE_OPEN
 
 // ---------------------------- explicit instantiations --------------------
@@ -23,6 +21,8 @@ DEAL_II_NAMESPACE_OPEN
 #ifndef SPLIT_INSTANTIATIONS_INDEX
 #  define SPLIT_INSTANTIATIONS_INDEX 0
 #endif
+#include "deal.II/base/config.h"
+
 #include "vector_tools_project.inst"
 
 DEAL_II_NAMESPACE_CLOSE

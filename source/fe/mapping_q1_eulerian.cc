@@ -13,8 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/std_cxx14/memory.h>
-
 #include <deal.II/dofs/dof_accessor.h>
 #include <deal.II/dofs/dof_handler.h>
 
@@ -154,6 +152,8 @@ MappingQ1Eulerian<dim, VectorType, spacedim>::fill_fe_values(
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "mapping_q1_eulerian.inst"
 
 

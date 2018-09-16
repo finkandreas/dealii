@@ -13,7 +13,10 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/array_view.h>
+#include "deal.II/base/config.h"
+#include <deal.II/base/config.h>
+
+#include "deal.II/base/types.h"
 #include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/multithread_info.h>
 #include <deal.II/base/numbers.h>
@@ -2719,7 +2722,6 @@ namespace internal
 /* ---------------- FEValuesBase<dim,spacedim>::CellIteratorBase --------- */
 
 template <int dim, int spacedim>
-class FEValuesBase<dim, spacedim>::CellIteratorBase
 {
 public:
   /**
@@ -2734,15 +2736,14 @@ public:
    * classes. However, since here we have kind of a parallel class hierarchy,
    * we have to have a conversion operator.
    */
-  virtual
-  operator typename Triangulation<dim, spacedim>::cell_iterator() const = 0;
+  virtual operator typename Triangulation<dim, spacedim>::cell_iterator()
+    const = 0;
 
   /**
    * Return the number of degrees of freedom the DoF
    * handler object has to which the iterator belongs to.
    */
-  virtual types::global_dof_index
-  n_dofs_for_dof_handler() const = 0;
+  virtual types::global_dof_index n_dofs_for_dof_handler() const = 0;
 
 #include "fe_values.decl.1.inst"
 
@@ -2750,9 +2751,9 @@ public:
    * Call @p get_interpolated_dof_values of the iterator with the
    * given arguments.
    */
-  virtual void
-  get_interpolated_dof_values(const IndexSet &              in,
-                              Vector<IndexSet::value_type> &out) const = 0;
+  virtual void get_interpolated_dof_values(const IndexSet &              in,
+                                           Vector<IndexSet::value_type> &out)
+    const = 0;
 };
 
 /* --- classes derived from FEValuesBase<dim,spacedim>::CellIteratorBase --- */

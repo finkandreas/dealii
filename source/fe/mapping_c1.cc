@@ -13,8 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/std_cxx14/memory.h>
-
 #include <deal.II/fe/mapping_c1.h>
 
 #include <deal.II/grid/manifold.h>
@@ -228,6 +226,8 @@ MappingC1<dim, spacedim>::clone() const
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "mapping_c1.inst"
 
 

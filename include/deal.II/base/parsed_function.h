@@ -17,6 +17,8 @@
 #ifndef dealii_parsed_function_h
 #define dealii_parsed_function_h
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/auto_derivative_function.h>
 #include <deal.II/base/function_parser.h>
 #include <deal.II/base/parameter_handler.h>
@@ -194,6 +196,7 @@ namespace Functions
      * component you want to have evaluated; it defaults to zero, i.e. the
      * first component.
      */
+
     virtual double
     value(const Point<dim> &p, const unsigned int component = 0) const override;
 

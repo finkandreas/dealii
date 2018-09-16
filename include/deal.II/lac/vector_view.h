@@ -19,6 +19,7 @@
 
 #include <deal.II/base/config.h>
 
+#include "deal.II/base/types.h"
 #include <deal.II/base/exceptions.h>
 #include <deal.II/base/subscriptor.h>
 

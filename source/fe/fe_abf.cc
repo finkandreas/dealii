@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/qprojector.h>
 #include <deal.II/base/quadrature.h>
 #include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/std_cxx14/memory.h>
@@ -619,6 +618,8 @@ FE_ABF<dim>::memory_consumption() const
 
 
 /*-------------- Explicit Instantiations -------------------------------*/
+#include "deal.II/base/config.h"
+
 #include "fe_abf.inst"
 
 DEAL_II_NAMESPACE_CLOSE

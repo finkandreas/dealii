@@ -17,13 +17,9 @@
 #define dealii_block_sparse_matrix_ez_h
 
 
-// TODO: Derive BlockSparseMatrixEZ from BlockMatrixBase, like all the
-// other block matrices as well; this would allow to instantiate a few
-// functions with this template argument as well (in particular
-// AffineConstraints::distribute_local_to_global)
-
 #include <deal.II/base/config.h>
 
+#include "deal.II/base/types.h"
 #include <deal.II/base/exceptions.h>
 #include <deal.II/base/smartpointer.h>
 #include <deal.II/base/subscriptor.h>
@@ -31,6 +27,12 @@
 
 #include <deal.II/lac/block_indices.h>
 #include <deal.II/lac/sparse_matrix_ez.h>
+
+// TODO: Derive BlockSparseMatrixEZ from BlockMatrixBase, like all the
+// other block matrices as well; this would allow to instantiate a few
+// functions with this template argument as well (in particular
+// AffineConstraints::distribute_local_to_global)
+
 
 DEAL_II_NAMESPACE_OPEN
 

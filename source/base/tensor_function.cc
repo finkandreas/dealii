@@ -13,11 +13,11 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/tensor_function.templates.h>
-
 DEAL_II_NAMESPACE_OPEN
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "tensor_function.inst"
 
 DEAL_II_NAMESPACE_CLOSE

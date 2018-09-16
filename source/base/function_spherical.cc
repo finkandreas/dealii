@@ -13,6 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/function_spherical.h>
 #include <deal.II/base/geometric_utilities.h>
 #include <deal.II/base/point.h>

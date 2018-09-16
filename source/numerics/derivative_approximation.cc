@@ -13,6 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/work_stream.h>
 

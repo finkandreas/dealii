@@ -13,8 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/memory_consumption.h>
-
 #include <deal.II/distributed/tria.h>
 
 #include <deal.II/dofs/dof_accessor.h>
@@ -622,6 +620,8 @@ SolutionTransfer<dim, VectorType, DoFHandlerType>::Pointerstruct::
 #ifndef SPLIT_INSTANTIATIONS_INDEX
 #  define SPLIT_INSTANTIATIONS_INDEX 0
 #endif
+#include "deal.II/base/config.h"
+
 #include "solution_transfer.inst"
 
 DEAL_II_NAMESPACE_CLOSE

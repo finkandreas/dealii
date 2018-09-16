@@ -20,12 +20,8 @@
 
 // @sect3{Include files}
 
-// We start with the usual assortment of include files that we've seen in so
-// many of the previous tests:
-#include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/function.h>
 #include <deal.II/base/logstream.h>
-
 #include <deal.II/lac/vector.h>
 #include <deal.II/lac/full_matrix.h>
 #include <deal.II/lac/sparse_matrix.h>
@@ -33,24 +29,16 @@
 #include <deal.II/lac/solver_cg.h>
 #include <deal.II/lac/precondition.h>
 #include <deal.II/lac/affine_constraints.h>
-
 #include <deal.II/grid/tria.h>
 #include <deal.II/grid/grid_generator.h>
 #include <deal.II/grid/tria_accessor.h>
 #include <deal.II/grid/tria_iterator.h>
-
 #include <deal.II/dofs/dof_handler.h>
 #include <deal.II/dofs/dof_accessor.h>
 #include <deal.II/dofs/dof_tools.h>
-
 #include <deal.II/fe/fe_q.h>
 #include <deal.II/fe/fe_values.h>
-
 #include <deal.II/numerics/data_out.h>
-
-#include <fstream>
-#include <iostream>
-
 // Here are the only three include files of some new interest: The first one
 // is already used, for example, for the
 // VectorTools::interpolate_boundary_values and
@@ -63,7 +51,6 @@
 // code. However, we're too lazy to do that here, so simply use a library
 // function:
 #include <deal.II/numerics/vector_tools.h>
-
 // In a very similar vein, we are also too lazy to write the code to assemble
 // mass and Laplace matrices, although it would have only taken copying the
 // relevant code from any number of previous tutorial programs. Rather, we
@@ -71,7 +58,6 @@
 // therefore use the MatrixCreator::create_mass_matrix and
 // MatrixCreator::create_laplace_matrix functions. They are declared here:
 #include <deal.II/numerics/matrix_tools.h>
-
 // Finally, here is an include file that contains all sorts of tool functions
 // that one sometimes needs. In particular, we need the
 // Utilities::int_to_string class that, given an integer argument, returns a
@@ -82,6 +68,9 @@
 // denotes the number of the time step and always consists of three digits
 // even if we are still in the single or double digit time steps.
 #include <deal.II/base/utilities.h>
+#include <deal.II/base/config.h>
+#include <fstream>
+#include <iostream>
 
 // The last step is as in all previous programs:
 namespace Step23

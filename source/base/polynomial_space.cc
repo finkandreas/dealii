@@ -13,6 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/exceptions.h>
 #include <deal.II/base/polynomial_space.h>
 #include <deal.II/base/table.h>

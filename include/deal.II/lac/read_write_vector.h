@@ -18,6 +18,7 @@
 
 #include <deal.II/base/config.h>
 
+#include "deal.II/base/types.h"
 #include <deal.II/base/index_set.h>
 #include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/mpi.h>
@@ -28,6 +29,7 @@
 
 #include <deal.II/lac/vector_operation.h>
 
+#include <cstddef>
 #include <cstdlib>
 #include <cstring>
 #include <iomanip>
@@ -45,6 +47,7 @@ DEAL_II_NAMESPACE_OPEN
 namespace LinearAlgebra
 {
   class CommunicationPatternBase;
+
   namespace distributed
   {
     template <typename, typename>

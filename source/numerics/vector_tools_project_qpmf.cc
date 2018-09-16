@@ -14,11 +14,11 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/numerics/vector_tools.templates.h>
-
 DEAL_II_NAMESPACE_OPEN
 
 // ---------------------------- explicit instantiations --------------------
+#include "deal.II/base/config.h"
+
 #include "vector_tools_project_qpmf.inst"
 
 DEAL_II_NAMESPACE_CLOSE

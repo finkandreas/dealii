@@ -14,8 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/config.h>
-
 #ifdef DEAL_II_WITH_P4EST
 
 #  include <deal.II/distributed/solution_transfer.h>

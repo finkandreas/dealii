@@ -23,55 +23,44 @@
 // The following header files are unchanged from step-7 and have been
 // discussed before:
 
-#include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/function.h>
 #include <deal.II/base/logstream.h>
-
 #include <deal.II/lac/vector.h>
 #include <deal.II/lac/full_matrix.h>
 #include <deal.II/lac/sparse_matrix.h>
 #include <deal.II/lac/dynamic_sparsity_pattern.h>
-
 #include <deal.II/grid/tria.h>
 #include <deal.II/grid/grid_generator.h>
 #include <deal.II/grid/tria_accessor.h>
 #include <deal.II/grid/tria_iterator.h>
 #include <deal.II/grid/manifold_lib.h>
-
 #include <deal.II/dofs/dof_handler.h>
 #include <deal.II/dofs/dof_accessor.h>
 #include <deal.II/dofs/dof_tools.h>
-
 #include <deal.II/fe/fe_q.h>
 #include <deal.II/fe/fe_values.h>
-
 #include <deal.II/numerics/matrix_tools.h>
 #include <deal.II/numerics/data_out.h>
 #include <deal.II/numerics/vector_tools.h>
-
-#include <iostream>
-#include <fstream>
-
 // This header file contains the necessary declarations for the
 // ParameterHandler class that we will use to read our parameters from a
 // configuration file:
 #include <deal.II/base/parameter_handler.h>
-
 // For solving the linear system, we'll use the sparse LU-decomposition
 // provided by UMFPACK (see the SparseDirectUMFPACK class), for which the
 // following header file is needed.  Note that in order to compile this
 // tutorial program, the deal.II-library needs to be built with UMFPACK
 // support, which is enabled by default:
 #include <deal.II/lac/sparse_direct.h>
-
 // The FESystem class allows us to stack several FE-objects to one compound,
 // vector-valued finite element field. The necessary declarations for this
 // class are provided in this header file:
 #include <deal.II/fe/fe_system.h>
-
 // Finally, include the header file that declares the Timer class that we will
 // use to determine how much time each of the operations of our program takes:
 #include <deal.II/base/timer.h>
+#include <iostream>
+#include <fstream>
 
 // As the last step at the beginning of this program, we put everything that
 // is in this program into its namespace and, within it, make everything that

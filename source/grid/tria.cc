@@ -35,6 +35,7 @@
 #include <algorithm>
 #include <array>
 #include <cmath>
+#include <cstddef>
 #include <functional>
 #include <list>
 #include <map>
@@ -15058,6 +15059,10 @@ Triangulation<dim, spacedim>::DistortedCellList::~DistortedCellList() noexcept
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
+#include "deal.II/base/types.h"
+
 #include "tria.inst"
 
 DEAL_II_NAMESPACE_CLOSE

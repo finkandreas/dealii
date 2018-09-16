@@ -13,7 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/geometry_info.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/qprojector.h>
 #include <deal.II/base/quadrature.h>
@@ -1787,14 +1788,5 @@ template class Quadrature<0>;
 template class Quadrature<1>;
 template class Quadrature<2>;
 template class Quadrature<3>;
-template class QAnisotropic<1>;
-template class QAnisotropic<2>;
-template class QAnisotropic<3>;
-template class QIterated<1>;
-template class QIterated<2>;
-template class QIterated<3>;
-template class QProjector<1>;
-template class QProjector<2>;
-template class QProjector<3>;
 
 DEAL_II_NAMESPACE_CLOSE

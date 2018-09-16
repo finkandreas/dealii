@@ -13,7 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/std_cxx14/memory.h>
 #include <deal.II/base/utilities.h>
 
@@ -276,6 +275,8 @@ MappingQEulerian<dim, VectorType, spacedim>::fill_fe_values(
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "mapping_q_eulerian.inst"
 
 

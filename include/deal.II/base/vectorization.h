@@ -24,6 +24,14 @@
 
 #include <cmath>
 
+namespace dealii
+{
+  template <typename Number>
+  class VectorizedArray;
+  template <typename T>
+  struct EnableIfScalar;
+} // namespace dealii
+
 // Note:
 // The flag DEAL_II_COMPILER_VECTORIZATION_LEVEL is essentially constructed
 // according to the following scheme

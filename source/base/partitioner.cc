@@ -13,6 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/partitioner.h>
 #include <deal.II/base/partitioner.templates.h>
 

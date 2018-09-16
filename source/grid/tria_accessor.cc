@@ -13,7 +13,9 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/geometry_info.h>
+#include "deal.II/base/config.h"
+
+#include "deal.II/base/types.h"
 #include <deal.II/base/quadrature.h>
 
 #include <deal.II/fe/fe_q.h>

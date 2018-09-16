@@ -13,6 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/mpi.h>
 #include <deal.II/base/mpi.templates.h>
 #include <deal.II/base/quadrature_lib.h>
@@ -64,6 +66,12 @@
 #include <set>
 #include <tuple>
 #include <unordered_map>
+
+namespace dealii
+{
+  template <typename Number>
+  class SparseMatrix;
+} // namespace dealii
 
 DEAL_II_NAMESPACE_OPEN
 

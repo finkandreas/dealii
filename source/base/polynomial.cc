@@ -13,6 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/exceptions.h>
 #include <deal.II/base/point.h>
 #include <deal.II/base/polynomial.h>
@@ -1554,9 +1556,6 @@ namespace Polynomials
   template void
   Polynomial<double>::shift(const long double offset);
 
-  template class Monomial<float>;
-  template class Monomial<double>;
-  template class Monomial<long double>;
 } // namespace Polynomials
 
 DEAL_II_NAMESPACE_CLOSE

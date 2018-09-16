@@ -21,36 +21,27 @@
 
 // @sect3{Include files}
 
-// Again, the first few include files are already known, so we won't comment
-// on them:
-#include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/function.h>
 #include <deal.II/base/logstream.h>
 #include <deal.II/base/utilities.h>
-
 #include <deal.II/lac/affine_constraints.h>
 #include <deal.II/lac/vector.h>
 #include <deal.II/lac/full_matrix.h>
 #include <deal.II/lac/sparse_matrix.h>
 #include <deal.II/lac/solver_cg.h>
 #include <deal.II/lac/precondition.h>
-
 #include <deal.II/grid/tria.h>
 #include <deal.II/grid/tria_accessor.h>
 #include <deal.II/grid/tria_iterator.h>
 #include <deal.II/grid/grid_generator.h>
 #include <deal.II/grid/grid_refinement.h>
-
 #include <deal.II/dofs/dof_accessor.h>
 #include <deal.II/dofs/dof_tools.h>
-
 #include <deal.II/fe/fe_q.h>
 #include <deal.II/fe/fe_values.h>
-
 #include <deal.II/numerics/vector_tools.h>
 #include <deal.II/numerics/data_out.h>
 #include <deal.II/numerics/error_estimator.h>
-
 // These, now, are the include necessary for the multilevel methods. The first
 // one declares how to handle Dirichlet boundary conditions on each of the
 // levels of the multigrid method. For the actual description of the degrees
@@ -67,7 +58,6 @@
 #include <deal.II/multigrid/mg_coarse.h>
 #include <deal.II/multigrid/mg_smoother.h>
 #include <deal.II/multigrid/mg_matrix.h>
-
 // Finally we include the MeshWorker framework. This framework through its
 // function loop() and integration_loop(), automates loops over cells and
 // assembling of data into vectors, matrices, etc. It obeys constraints
@@ -78,11 +68,9 @@
 #include <deal.II/meshworker/simple.h>
 #include <deal.II/meshworker/output.h>
 #include <deal.II/meshworker/loop.h>
-
 // In order to save effort, we use the pre-implemented Laplacian found in
 #include <deal.II/integrators/laplace.h>
 #include <deal.II/integrators/l2.h>
-
 // This is C++:
 #include <iostream>
 #include <fstream>

@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/conditional_ostream.h>
 #include <deal.II/base/utilities.h>
 #include <deal.II/base/vectorization.h>
 
@@ -23,6 +22,8 @@
 #include <iostream>
 
 DEAL_II_NAMESPACE_OPEN
+
+#include "deal.II/base/config.h"
 
 #include "matrix_free.inst"
 

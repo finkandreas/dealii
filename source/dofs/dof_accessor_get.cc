@@ -176,6 +176,16 @@ DoFCellAccessor<DoFHandlerType, lda>::get_interpolated_dof_values(
 
 // --------------------------------------------------------------------------
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "dof_accessor_get.inst"
+
+namespace dealii
+{
+  template <int, int>
+  class FiniteElement;
+  template <typename number>
+  class Vector;
+} // namespace dealii
 
 DEAL_II_NAMESPACE_CLOSE

@@ -13,7 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/array_view.h>
 #include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/polynomial.h>
 #include <deal.II/base/qprojector.h>
@@ -2358,6 +2357,8 @@ MappingFEField<dim, spacedim, VectorType, DoFHandlerType>::update_internal_dofs(
 #ifndef SPLIT_INSTANTIATIONS_INDEX
 #  define SPLIT_INSTANTIATIONS_INDEX 0
 #endif
+#include "deal.II/base/config.h"
+
 #include "mapping_fe_field.inst"
 
 

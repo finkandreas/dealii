@@ -14,7 +14,8 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/algorithms/newton.templates.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/algorithms/operator.templates.h>
 #include <deal.II/algorithms/theta_timestepping.templates.h>
 

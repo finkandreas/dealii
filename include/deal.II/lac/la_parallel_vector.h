@@ -18,6 +18,7 @@
 
 #include <deal.II/base/config.h>
 
+#include "deal.II/base/types.h"
 #include <deal.II/base/memory_space.h>
 #include <deal.II/base/mpi.h>
 #include <deal.II/base/numbers.h>
@@ -28,6 +29,7 @@
 #include <deal.II/lac/vector_space_vector.h>
 #include <deal.II/lac/vector_type_traits.h>
 
+#include <cstddef>
 #include <iomanip>
 #include <memory>
 

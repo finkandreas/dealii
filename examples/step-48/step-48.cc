@@ -18,8 +18,6 @@
  */
 
 
-// The necessary files from the deal.II library.
-#include <deal.II/base/logstream.h>
 #include <deal.II/base/utilities.h>
 #include <deal.II/base/function.h>
 #include <deal.II/base/conditional_ostream.h>
@@ -35,13 +33,12 @@
 #include <deal.II/numerics/vector_tools.h>
 #include <deal.II/numerics/data_out.h>
 #include <deal.II/distributed/tria.h>
-
 // This includes the data structures for the efficient implementation of
 // matrix-free methods.
 #include <deal.II/lac/la_parallel_vector.h>
 #include <deal.II/matrix_free/matrix_free.h>
 #include <deal.II/matrix_free/fe_evaluation.h>
-
+#include <deal.II/base/config.h>
 #include <fstream>
 #include <iostream>
 #include <iomanip>

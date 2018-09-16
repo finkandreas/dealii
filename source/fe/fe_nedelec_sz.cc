@@ -13,8 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/std_cxx14/memory.h>
-
 #include <deal.II/fe/fe_nedelec_sz.h>
 
 DEAL_II_NAMESPACE_OPEN
@@ -2274,6 +2272,8 @@ FE_NedelecSZ<dim, spacedim>::create_polynomials(const unsigned int degree)
 }
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "fe_nedelec_sz.inst"
 
 DEAL_II_NAMESPACE_CLOSE

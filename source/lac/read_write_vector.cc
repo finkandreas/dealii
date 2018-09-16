@@ -18,6 +18,8 @@
 
 DEAL_II_NAMESPACE_OPEN
 
+#include "deal.II/base/config.h"
+
 #include "read_write_vector.inst"
 
 namespace LinearAlgebra

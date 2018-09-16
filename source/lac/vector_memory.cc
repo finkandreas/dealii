@@ -13,7 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/lac/block_vector.h>
 #include <deal.II/lac/cuda_vector.h>
 #include <deal.II/lac/la_parallel_block_vector.h>
 #include <deal.II/lac/la_parallel_vector.h>
@@ -27,6 +26,8 @@
 
 
 DEAL_II_NAMESPACE_OPEN
+
+#include "deal.II/base/config.h"
 
 #include "vector_memory.inst"
 

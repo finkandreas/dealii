@@ -18,6 +18,7 @@
 
 #  include <deal.II/base/config.h>
 
+#  include "deal.II/base/types.h"
 #  include <deal.II/base/data_out_base.h>
 
 #  include <deal.II/lac/block_sparse_matrix.h>

@@ -13,9 +13,11 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/lac/block_vector.h>
 #include <deal.II/lac/sparse_matrix_ez.templates.h>
 
 DEAL_II_NAMESPACE_OPEN
+#include "deal.II/base/config.h"
+
 #include "sparse_matrix_ez.inst"
+
 DEAL_II_NAMESPACE_CLOSE

@@ -13,6 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
+#include "deal.II/base/array_view.h"
+
 #include <deal.II/particles/particle_accessor.h>
 
 DEAL_II_NAMESPACE_OPEN

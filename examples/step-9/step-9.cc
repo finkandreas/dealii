@@ -18,9 +18,6 @@
  */
 
 
-// Just as in previous examples, we have to include several files of which the
-// meaning has already been discussed:
-#include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/function.h>
 #include <deal.II/base/logstream.h>
 #include <deal.II/lac/vector.h>
@@ -44,7 +41,6 @@
 #include <deal.II/numerics/data_out.h>
 #include <deal.II/fe/fe_q.h>
 #include <deal.II/grid/grid_out.h>
-
 // The following two files provide classes and information for multithreaded
 // programs. In the first one, the classes and functions are declared which we
 // need to do assembly in parallel (i.e. the
@@ -54,14 +50,11 @@
 // how many threads to start in parallel.
 #include <deal.II/base/work_stream.h>
 #include <deal.II/base/multithread_info.h>
-
 // The next new include file declares a base class <code>TensorFunction</code>
 // not unlike the <code>Function</code> class, but with the difference that
 // TensorFunction::value returns a Tensor instead of a scalar.
 #include <deal.II/base/tensor_function.h>
-
 #include <deal.II/numerics/error_estimator.h>
-
 // This is C++, as we want to write some output to disk:
 #include <fstream>
 #include <iostream>

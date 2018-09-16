@@ -18,9 +18,6 @@
  */
 
 
-// As usual, the program starts with a rather long list of include files which
-// you are probably already used to by now:
-#include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/function.h>
 #include <deal.II/base/logstream.h>
 #include <deal.II/base/table_handler.h>
@@ -41,12 +38,10 @@
 #include <deal.II/fe/mapping_q.h>
 #include <deal.II/numerics/vector_tools.h>
 #include <deal.II/numerics/matrix_tools.h>
-
 // Just this one is new: it declares a class
 // DynamicSparsityPattern, which we will use and explain
 // further down below.
 #include <deal.II/lac/dynamic_sparsity_pattern.h>
-
 // We will make use of the std::find algorithm of the C++ standard library, so
 // we have to include the following file for its declaration:
 #include <algorithm>

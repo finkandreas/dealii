@@ -13,6 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/opencascade/utilities.h>
 
 #ifdef DEAL_II_WITH_OPENCASCADE

@@ -14,6 +14,8 @@
 // ---------------------------------------------------------------------
 
 
+#include "deal.II/base/array_view.h"
+
 #include <deal.II/particles/property_pool.h>
 
 DEAL_II_NAMESPACE_OPEN

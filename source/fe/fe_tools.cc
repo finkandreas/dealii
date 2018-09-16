@@ -14,11 +14,11 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/fe/fe_tools.templates.h>
-
 DEAL_II_NAMESPACE_OPEN
 
 /*-------------- Explicit Instantiations -------------------------------*/
+#include "deal.II/base/config.h"
+
 #include "fe_tools.inst"
 
 DEAL_II_NAMESPACE_CLOSE

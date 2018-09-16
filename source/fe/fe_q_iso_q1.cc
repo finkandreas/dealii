@@ -148,6 +148,8 @@ FE_Q_iso_Q1<dim, spacedim>::compare_for_face_domination(
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "fe_q_iso_q1.inst"
 
 DEAL_II_NAMESPACE_CLOSE

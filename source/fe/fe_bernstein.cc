@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/polynomials_bernstein.h>
 #include <deal.II/base/qprojector.h>
 #include <deal.II/base/quadrature.h>
 #include <deal.II/base/quadrature_lib.h>
@@ -364,6 +363,8 @@ FE_Bernstein<dim, spacedim>::renumber_bases(const unsigned int deg)
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "fe_bernstein.inst"
 
 DEAL_II_NAMESPACE_CLOSE

@@ -13,17 +13,14 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/logstream.h>
-
 #include <deal.II/lac/full_matrix.templates.h>
 
 DEAL_II_NAMESPACE_OPEN
 
+#include "deal.II/base/config.h"
+
 #include "full_matrix.inst"
 
-// instantiate for long double manually because we use it in a few places
-// inside the library
-template class FullMatrix<long double>;
 template void
 FullMatrix<long double>::invert<long double>(const FullMatrix<long double> &);
 template void

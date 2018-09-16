@@ -13,7 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/quadrature_lib.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/quadrature_selector.h>
 
 DEAL_II_NAMESPACE_OPEN

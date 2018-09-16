@@ -20,6 +20,8 @@
 
 #include <deal.II/particles/particle_accessor.h>
 
+#include <cstddef>
+
 DEAL_II_NAMESPACE_OPEN
 
 namespace Particles

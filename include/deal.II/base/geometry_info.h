@@ -22,6 +22,7 @@
 #include <deal.II/base/exceptions.h>
 #include <deal.II/base/point.h>
 
+#include <cstddef>
 #include <cstdint>
 
 
@@ -74,6 +75,7 @@ namespace internal
       static constexpr std::array<std::array<unsigned int, 2>, 4>
         vertex_to_face{{{{0, 2}}, {{1, 2}}, {{0, 3}}, {{1, 3}}}};
     };
+
 
     template <>
     struct Initializers<3>

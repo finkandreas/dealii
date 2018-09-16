@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/conditional_ostream.h>
 #include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/mpi.h>
 #include <deal.II/base/multithread_info.h>
@@ -30,6 +29,8 @@
 #  include <tbb/task.h>
 #  include <tbb/task_scheduler_init.h>
 #endif
+
+#include "deal.II/base/config.h"
 
 #include <iostream>
 #include <set>

@@ -49,8 +49,9 @@
 #include <memory>
 #include <set>
 #include <sstream>
-
 // we use uint32_t and uint8_t below, which are declared here:
+#include "deal.II/base/config.h"
+
 #include <cstdint>
 
 #ifdef DEAL_II_WITH_ZLIB

@@ -14,7 +14,8 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/quadrature_lib.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/std_cxx14/memory.h>
 
 #include <deal.II/fe/fe_face.h>

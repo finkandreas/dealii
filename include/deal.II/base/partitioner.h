@@ -18,6 +18,7 @@
 
 #include <deal.II/base/config.h>
 
+#include "deal.II/base/types.h"
 #include <deal.II/base/array_view.h>
 #include <deal.II/base/index_set.h>
 #include <deal.II/base/memory_consumption.h>
@@ -29,6 +30,7 @@
 #include <deal.II/lac/vector.h>
 #include <deal.II/lac/vector_operation.h>
 
+#include <cstddef>
 #include <limits>
 
 

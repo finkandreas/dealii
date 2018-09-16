@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/function.h>
 #include <deal.II/base/logstream.h>
 
 #include <deal.II/dofs/dof_accessor.h>
@@ -404,6 +403,8 @@ MGTransferPrebuilt<VectorType>::memory_consumption() const
 
 
 // explicit instantiation
+#include "deal.II/base/config.h"
+
 #include "mg_transfer_prebuilt.inst"
 
 

@@ -14,7 +14,7 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/lac/block_indices.h>
+#include "deal.II/base/config.h"
 
 #include <deal.II/meshworker/local_integrator.h>
 #include <deal.II/meshworker/local_results.h>

@@ -18,9 +18,6 @@
  */
 
 
-// The program starts with the usual include files, all of which you should
-// have seen before by now:
-#include <deal.II/base/utilities.h>
 #include <deal.II/base/quadrature_lib.h>
 #include <deal.II/base/function.h>
 #include <deal.II/base/logstream.h>
@@ -47,7 +44,6 @@
 #include <deal.II/numerics/error_estimator.h>
 #include <deal.II/numerics/solution_transfer.h>
 #include <deal.II/numerics/matrix_tools.h>
-
 #include <fstream>
 #include <iostream>
 

@@ -13,6 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/non_matching/immersed_surface_quadrature.h>
 
 DEAL_II_NAMESPACE_OPEN

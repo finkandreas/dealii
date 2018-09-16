@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/conditional_ostream.h>
 #include <deal.II/base/utilities.h>
 
 #include <deal.II/matrix_free/mapping_info.templates.h>
@@ -22,6 +21,8 @@
 #include <iostream>
 
 DEAL_II_NAMESPACE_OPEN
+
+#include "deal.II/base/config.h"
 
 #include "mapping_info.inst"
 

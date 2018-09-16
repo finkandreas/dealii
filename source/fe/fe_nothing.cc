@@ -14,8 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/std_cxx14/memory.h>
-
 #include <deal.II/fe/fe_nothing.h>
 
 DEAL_II_NAMESPACE_OPEN
@@ -330,6 +328,8 @@ FE_Nothing<dim, spacedim>::get_subface_interpolation_matrix(
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "fe_nothing.inst"
 
 

@@ -94,6 +94,8 @@ Mapping<dim, spacedim>::InternalDataBase::memory_consumption() const
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "mapping.inst"
 
 

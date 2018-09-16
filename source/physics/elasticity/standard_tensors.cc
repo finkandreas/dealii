@@ -13,8 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/symmetric_tensor.h>
-
 #include <deal.II/physics/elasticity/standard_tensors.h>
 
 DEAL_II_NAMESPACE_OPEN
@@ -46,6 +44,8 @@ const SymmetricTensor<4, dim>
 #endif // DOXYGEN
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "standard_tensors.inst"
 
 DEAL_II_NAMESPACE_CLOSE

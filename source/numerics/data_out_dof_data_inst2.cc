@@ -13,7 +13,6 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/lac/block_vector.h>
 #include <deal.II/lac/la_parallel_block_vector.h>
 #include <deal.II/lac/la_parallel_vector.h>
 #include <deal.II/lac/la_vector.h>
@@ -31,6 +30,8 @@ DEAL_II_NAMESPACE_OPEN
 
 #define SPLIT_INSTANTIATIONS_COUNT 2
 #define SPLIT_INSTANTIATIONS_INDEX 1
+#include "deal.II/base/config.h"
+
 #include "data_out_dof_data.inst"
 
 DEAL_II_NAMESPACE_CLOSE

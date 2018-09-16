@@ -17,6 +17,8 @@
 
 DEAL_II_NAMESPACE_OPEN
 
+#include "deal.II/base/config.h"
+
 #include "vector_view.inst"
 
 DEAL_II_NAMESPACE_CLOSE

@@ -14,7 +14,9 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/distributed/tria.h>
+#include "deal.II/base/config.h"
+
+#include "deal.II/base/types.h"
 
 #include <deal.II/dofs/dof_tools.h>
 

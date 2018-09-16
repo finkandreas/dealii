@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/function.h>
 #include <deal.II/base/logstream.h>
 
 #include <deal.II/dofs/dof_accessor.h>
@@ -435,6 +434,8 @@ MGLevelGlobalTransfer<
 
 
 // explicit instantiation
+#include "deal.II/base/config.h"
+
 #include "mg_level_global_transfer.inst"
 
 // create an additional instantiation currently not supported by the automatic

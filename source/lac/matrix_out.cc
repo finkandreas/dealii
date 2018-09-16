@@ -13,6 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/lac/matrix_out.h>
 
 DEAL_II_NAMESPACE_OPEN

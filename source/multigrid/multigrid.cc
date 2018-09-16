@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/lac/block_sparse_matrix.h>
 #include <deal.II/lac/la_parallel_block_vector.h>
 #include <deal.II/lac/la_parallel_vector.h>
 #include <deal.II/lac/la_vector.h>
@@ -304,14 +303,12 @@ MGTransferBlockSelect<number>::restrict_and_add(const unsigned int from_level,
 
 // Explicit instantiations
 
+#include "deal.II/base/config.h"
+
 #include "multigrid.inst"
 
 template class MGTransferBlock<float>;
 template class MGTransferBlock<double>;
-template class MGTransferSelect<float>;
-template class MGTransferSelect<double>;
-template class MGTransferBlockSelect<float>;
-template class MGTransferBlockSelect<double>;
 
 
 DEAL_II_NAMESPACE_CLOSE

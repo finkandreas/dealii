@@ -14,6 +14,8 @@
 // ---------------------------------------------------------------------
 
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/function_parser.h>
 #include <deal.II/base/patterns.h>
 #include <deal.II/base/thread_management.h>

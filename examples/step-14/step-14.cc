@@ -48,12 +48,13 @@
 #include <deal.II/numerics/matrix_tools.h>
 #include <deal.II/numerics/data_out.h>
 #include <deal.II/numerics/error_estimator.h>
-
 #include <iostream>
 #include <fstream>
 #include <list>
 #include <algorithm>
 #include <numeric>
+
+#include "deal.II/base/types.h"
 
 // The last step is as in all previous programs:
 namespace Step14

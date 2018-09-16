@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/derivative_form.h>
 #include <deal.II/base/memory_consumption.h>
 #include <deal.II/base/qprojector.h>
 #include <deal.II/base/quadrature.h>
@@ -68,6 +67,8 @@ MappingQGeneric<dim, spacedim>
 
 
 //--------------------------- Explicit instantiations -----------------------
+#include "deal.II/base/config.h"
+
 #include "mapping_q1.inst"
 
 

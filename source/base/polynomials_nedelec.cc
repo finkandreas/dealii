@@ -13,7 +13,8 @@
 //
 // ---------------------------------------------------------------------
 
-#include <deal.II/base/geometry_info.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/polynomial.h>
 #include <deal.II/base/polynomials_nedelec.h>
 #include <deal.II/base/quadrature_lib.h>

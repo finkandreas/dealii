@@ -14,6 +14,8 @@
 // ---------------------------------------------------------------------
 
 
+#include "deal.II/base/config.h"
+
 #include <deal.II/lac/block_sparse_matrix_ez.h>
 #include <deal.II/lac/block_sparse_matrix_ez.templates.h>
 

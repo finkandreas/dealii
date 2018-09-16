@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/polynomials_abf.h>
 #include <deal.II/base/polynomials_bdm.h>
 #include <deal.II/base/polynomials_nedelec.h>
 #include <deal.II/base/polynomials_raviart_thomas.h>
@@ -99,6 +98,8 @@ FE_DGBDM<dim, spacedim>::get_name() const
   return namebuf.str();
 }
 
+
+#include "deal.II/base/config.h"
 
 #include "fe_dg_vector.inst"
 

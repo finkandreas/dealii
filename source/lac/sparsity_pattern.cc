@@ -14,7 +14,8 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/std_cxx14/memory.h>
+#include "deal.II/base/config.h"
+
 #include <deal.II/base/utilities.h>
 #include <deal.II/base/vector_slice.h>
 

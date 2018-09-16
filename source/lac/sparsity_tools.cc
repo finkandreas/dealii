@@ -44,6 +44,8 @@ extern "C"
 #  include <zoltan_cpp.h>
 #endif
 
+#include "deal.II/base/config.h"
+
 #include <string>
 
 

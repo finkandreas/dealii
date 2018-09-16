@@ -14,7 +14,13 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/numerics/vector_tools.templates.h>
+#include "deal.II/base/config.h"
+
+namespace dealii
+{
+  template <typename Number>
+  class Vector;
+} // namespace dealii
 
 DEAL_II_NAMESPACE_OPEN
 

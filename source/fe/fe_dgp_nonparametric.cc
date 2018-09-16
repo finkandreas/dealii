@@ -14,7 +14,6 @@
 // ---------------------------------------------------------------------
 
 
-#include <deal.II/base/quadrature.h>
 #include <deal.II/base/std_cxx14/memory.h>
 
 #include <deal.II/dofs/dof_accessor.h>
@@ -637,6 +636,8 @@ FE_DGPNonparametric<dim, spacedim>::get_degree() const
 
 
 // explicit instantiations
+#include "deal.II/base/config.h"
+
 #include "fe_dgp_nonparametric.inst"
 
 
